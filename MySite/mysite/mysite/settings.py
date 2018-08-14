@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'readhistory',
     'polls',
     'django.contrib.admin',
     'django.contrib.auth',
