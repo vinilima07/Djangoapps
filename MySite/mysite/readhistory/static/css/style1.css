@@ -1,18 +1,3 @@
-*{
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-input{
-  border: 1px solid black;
-  width: 100%;
-}
-
-input:hover{
-  opacity: 0.5;
-}
-
 html{
   background: #deefff;
   background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
@@ -22,14 +7,4 @@ html{
   background-size: cover;
   height: 100%;
   width: 100%;
-}
-
-.authentication{
-  width: 200px;
-  height: 150px;
-  text-align: center;
-  border: 4px solid white;
-  border-radius: 4px;
-  background: white;
-  padding: 50px;
 }
