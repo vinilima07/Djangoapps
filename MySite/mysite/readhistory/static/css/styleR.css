@@ -149,16 +149,15 @@ a{
   align-items: center;
   vertical-align: middle;
   width: 40em;
-  height: 10em;
   border: 1em solid white;
   border-radius: 1em;
   background: white;
-  padding: 4em;
+  padding: 1em;
 }
 
 .authentication-item{
   text-align: center;
-  width: 100%;
+  width: 30em;
 }
 
 .authentication-item:hover{
