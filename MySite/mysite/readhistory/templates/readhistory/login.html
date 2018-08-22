@@ -1,17 +1,35 @@
-<div class="row row-center">
-  <form class="authentication" action="" target="" method="post">
-    <b>Login: </b>
-    <br />
-    <br />
-    <input class="authentication-item" type="text" name="login" placeholder="username"/>
-    <br />
-    <br />
-    <b>Password: </b>
-    <br />
-    <br />
-    <input class="authentication-item" type="password" name="password" placeholder="password"/>
-    <br />
-    <br />
-    <input class="authentication-item" type="submit" value="login" name="button"/>
-  </form>
-</div>
+<!DOCTYPE html>
+
+<html>
+  <head lang="br">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="device-width, initial-scale = 1" />
+    <title>Read History Login</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styleR.css' %}"/>
+    <script type="text/javascript" src="{% static 'javascript/sketch1.js' %}"></script>
+  </head>
+
+  <body>
+    <div class="row row-center first">
+      <form class="authentication" action="" target="" method="post">
+        <b>Login:</b>
+        <br />
+        <br />
+        <input class="authentication-item" type="text" name="login" placeholder="username"/>
+        <br />
+        <br />
+        <b>Password:</b>
+        <br />
+        <br />
+        <input class="authentication-item" type="password" name="password" placeholder="password"/>
+        <br />
+        <br />
+        <input class="authentication-item" type="submit" value="login" name="button"/>
+      </form>
+    </div>
+    {% include  "readhistory/footer.html" %}
+  </body>
+
+</html>

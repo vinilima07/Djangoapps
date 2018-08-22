@@ -8,6 +8,12 @@
 a{
   font-style: none;
   text-decoration: none;
+  padding: 1em;
+}
+
+a:hover{
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .nav, .nav-fixed{
@@ -46,7 +52,7 @@ a{
 @media (max-width: 600px) {
   .nav-menu, .nav-item{
     display: list-item;
-    list-style: none;
+    list-style: none;width: 40em;
   }
   .nav-item{
     display: none;
@@ -59,7 +65,6 @@ a{
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   grid-gap: 0px;
-  padding: 1em;
 }
 
 .row-center{
@@ -131,6 +136,9 @@ a{
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .menu-lateral{
+    display: none;
+  }
 }
 
 .first{
@@ -138,17 +146,20 @@ a{
 }
 
 .footer{
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
 
 .authentication{
+  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  width: 40em;
+  top: 30%;
+  width: 30em;
   border: 1em solid white;
   border-radius: 1em;
   background: white;
@@ -157,9 +168,43 @@ a{
 
 .authentication-item{
   text-align: center;
-  width: 30em;
+  width: 20em;
 }
 
 .authentication-item:hover{
+  transition: all 0.1s linear;
   opacity: 0.5;
+}
+
+.menu-lateral{
+  position: absolute;
+  transition: all .2s linear;
+  height: 100%;
+  width: 12em;
+  left: -20em;
+  padding-top: 6em;
+  padding-right: 1em;
+  background-size: cover;
+  background: gray;
+}
+
+.menu-lateral-item{
+  width: 100%;
+  padding-top: 2em;
+}
+
+#check-icon{
+  display: none;
+}
+
+#icon-menu-lateral img{
+  padding: 1em;
+  cursor: pointer;
+  position: absolute;
+  width: 5em;
+  z-index: 1;
+}
+
+#check-icon:checked ~ .menu-lateral{
+  transform: translateX(20em);
 }

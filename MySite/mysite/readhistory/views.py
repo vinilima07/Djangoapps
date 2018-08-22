@@ -6,3 +6,6 @@ def head(request):
 
 def home(request):
     return render(request, 'readhistory/home.html')
+
+def login(request):
+    return render(request, 'readhistory/login.html')
