@@ -15,18 +15,21 @@
     <input type="checkbox" id="check-icon">
     <label id="icon-menu-lateral" for="check-icon"><img src="{% static 'images/img.png' %}"/></label>
     <div class="menu-lateral">
-      <a class="menu-lateral-item">HOME</a><br />
-      <a class="menu-lateral-item">FAVORITOS</a><br />
-      <a class="menu-lateral-item">TOP ESCRITORES</a><br />
-      <a class="menu-lateral-item">TOP HISTÓRIAS</a><br />
-      <a class="menu-lateral-item">MINHAS HITÓRIAS</a><br />
+      <a class="menu-lateral-item">HOME</a>
+      <a class="menu-lateral-item">FAVORITOS</a>
+      <a class="menu-lateral-item">TOP ESCRITORES</a>
+      <a class="menu-lateral-item">TOP HISTÓRIAS</a>
+      <a class="menu-lateral-item">MINHAS HITÓRIAS</a>
     </div>
 
     <div class="nav nav-fixed nav-center">
       <a class="nav-menu">HOME</a>
       <a class="nav-item">CATEGORIA</a>
       <a class="nav-item">MEUS ESCRITORES</a>
-      <a class="nav-item">BUSCAR</a>
+      <form class="nav-item">
+        <input type="search" name="search" placeholder="buscar">
+      </form>
+      <a id="search-submit" class="nav-item">BUSCAR</a>
     </div>
 
     {% block content%}
