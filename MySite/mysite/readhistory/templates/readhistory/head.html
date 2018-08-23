@@ -12,24 +12,25 @@
   </head>
 
   <body>
-    <input type="checkbox" id="check-icon">
+    <input type="checkbox" id="check-icon"/>
     <label id="icon-menu-lateral" for="check-icon"><img src="{% static 'images/img.png' %}"/></label>
     <div class="menu-lateral">
       <a class="menu-lateral-item">HOME</a>
       <a class="menu-lateral-item">FAVORITOS</a>
       <a class="menu-lateral-item">TOP ESCRITORES</a>
       <a class="menu-lateral-item">TOP HISTÓRIAS</a>
-      <a class="menu-lateral-item">MINHAS HITÓRIAS</a>
+      <a class="menu-lateral-item">MINHAS HISTÓRIAS</a>
     </div>
 
     <div class="nav nav-fixed nav-center">
-      <a class="nav-menu">HOME</a>
+      <input type="checkbox" id="dropdown-menu" class="nav-menu"/>
+      <label class="nav-menu" for="dropdown-menu">MENU</label>
       <a class="nav-item">CATEGORIA</a>
       <a class="nav-item">MEUS ESCRITORES</a>
       <form class="nav-item">
-        <input type="search" name="search" placeholder="buscar">
+        <input type="search" name="search" placeholder="buscar"/>
+        <input type="submit" method="post" id="search-submit" value="BUSCAR"/>
       </form>
-      <a id="search-submit" class="nav-item">BUSCAR</a>
     </div>
 
     {% block content%}
