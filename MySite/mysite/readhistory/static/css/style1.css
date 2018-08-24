@@ -15,13 +15,3 @@ html{
 .footer{
   background: white;
 }
-
-@media (max-width: 800px) {
-  #dropdown-menu:checked ~ .nav-item{
-    display: block;
-  }
-}
-
-#dropdown-menu{
-  display: none;
-}
