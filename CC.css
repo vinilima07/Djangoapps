@@ -1,0 +1,73 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+.nav, .nav-fixed{
+  overflow: hidden;
+  width: 100%;
+  padding: 1em;
+}
+
+.nav-item, .nav-menu{
+  display: inline;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.nav-menu{
+  display: none;
+}
+
+.nav-fixed{
+  position: fixed;
+  top: 0;
+}
+
+.nav-center{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-right{
+  text-align: right;
+}
+
+.nav-left{
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .nav-menu{
+    display: inline;
+    list-style: none;
+  }
+  .nav-item{
+    display: none;
+  }
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
