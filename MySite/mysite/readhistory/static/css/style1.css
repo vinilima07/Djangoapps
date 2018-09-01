@@ -24,6 +24,19 @@
   height: 70%;
 }
 
+.writerarea textarea{
+  max-width: 100%;
+  width: 100%;
+}
+
+.writerarea{
+  padding: 0.5em;
+}
+
+.writerarea select{
+
+}
+
 @media (max-width: 768px) {
   #addwriter{
     display: none;

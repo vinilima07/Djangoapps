@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 
 <html>
-  <head lang="br">
+
+<head lang="br">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale = 1" />
     <title>Read History</title>
+
     {% load staticfiles %}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+    <script src="{% static 'bootstrap/css/bootstrap.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
-    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
-    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
-    <script src="{% static 'css//style1.css' %}"></script> -->
 
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-          <img id="logo" class="navbar-brand navbar-left" src="{% static 'images/logo.png' %}"/>
-          <a class="navbar-brand" href="#">ReadHistory</a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="glyphicon glyphicon glyphicon-th" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#addwriter" aria-expanded="false" href="#">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true" href="#"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="#">My Authors</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Adulto</a></li>
-                <li><a href="#">Romance</a></li>
-                <li><a href="#">Terror</a></li>
-                <li><a href="#">Humor</a></li>
-                <li><a href="#">Fanfic</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header"></li>
-                <li><a href="#"></a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left" action="" method="post">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" name="search">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="glyphicon glyphicon-search"></i>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <img id="logo" class="navbar-brand navbar-left" src="{% static 'images/logo.png' %}" />
+                <a class="navbar-brand" href="#">ReadHistory</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="glyphicon glyphicon glyphicon-th" aria-hidden="true"></span>
                 </button>
-              </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#addwriter" aria-expanded="false" href="#">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true" href="#"></span>
+                </button>
             </div>
-          </form>
-          <div id="addwriter" class="collapse navbar-collapse navbar-left">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Write</a></li>
-            </ul>
-          </div><!--/.add-collapse -->
-        </div><!--/.nav-collapse -->
-    </nav>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">My Authors</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Adulto</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Terror</a></li>
+                            <li><a href="#">Humor</a></li>
+                            <li><a href="#">Fanfic</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header"></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" action="" method="post">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="addwriter" class="collapse navbar-collapse navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Write</a></li>
+                    </ul>
+                </div>
+                <!--/.add-collapse -->
+            </div>
+            <!--/.nav-collapse -->
+        </nav>
 
-    {% block content%}
-    {% endblock%}
+        {% block content%} {% endblock%}
 
-  </div>
-  {% include "readhistory/footer.html" %}
-  </body>
+    </div>
+    {% include "readhistory/footer.html" %}
+</body>
 
 </html>
