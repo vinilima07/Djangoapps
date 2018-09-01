@@ -10,5 +10,5 @@ def home(request):
 def login(request):
     return render(request, 'readhistory/login.html')
 
-def writer(request):
-    return render(request, 'readhistory/writer.html')
+def write(request):
+    return render(request, 'readhistory/write.html')

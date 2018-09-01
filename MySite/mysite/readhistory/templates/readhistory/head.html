@@ -3,23 +3,22 @@
 <html>
   <head lang="br">
     <meta charset="utf-8" />
-    <meta name="viewport" content="device-width, initial-scale = 1" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
     <title>Read History</title>
     {% load staticfiles %}
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- staticfiles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'css//style1.css' %}"></script> -->
 
   </head>
 
   <body>
-    <div class=".container-fluid">
+    <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
           <img id="logo" class="navbar-brand navbar-left" src="{% static 'images/logo.png' %}"/>
@@ -60,7 +59,7 @@
           </form>
           <div id="addwriter" class="collapse navbar-collapse navbar-left">
             <ul class="nav navbar-nav">
-              <li class="add-writer"><a href="#">Write</a></li>
+              <li><a href="#">Write</a></li>
             </ul>
           </div><!--/.add-collapse -->
         </div><!--/.nav-collapse -->
