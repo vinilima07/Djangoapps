@@ -3,31 +3,30 @@
 {% block content %}
 
 <div class="container writer">
-  <div class="row first">
-    <form class="writerarea" action="" id="textareaform">
+    <form class="row first writerarea" action="" id="textareaform">
       <input type="submit" value="Enviar">
       <select name="categorywrite" form="textareaform">
         <option selected disabled>Category</option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
+        <option value="volvo">Humor</option>
+        <option value="saab">Romance</option>
+        <option value="opel">Adult</option>
+        <option value="audi">Terror</option>
       </select>
       <select name="verwrite" form="textareaform">
-        <option selected disabled>Veracidade</option>
+        <option selected disabled>Veracity</option>
         <option value="volvo">True</option>
         <option value="saab">Not True</option>
         <option value="opel">Fanfic</option>
         <option value="audi">Desire</option>
       </select>
-      <label for="male">Where?</label>
+      <label for="wherewrite">Where?</label>
       <input name="wherewrite" type="text" placeholder="Texas"/>
-    </form>
-  </div>
+      <label for="wherewrite">Title</label>
+      <input name="wherewrite" type="text" placeholder="Texas" maxlength="25"/>
+  </form>
   <div class="row last">
       <form class="writerarea" name="text" method="post" action="">
-        <textarea rows="20" wrap="hard" maxlength="100000">
-
+        <textarea name="writecontent" rows="15" wrap="hard">
         </textarea>
       </form>
   </div>
