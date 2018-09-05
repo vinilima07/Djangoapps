@@ -6,24 +6,26 @@
     <meta name="viewport" content="device-width, initial-scale = 1" />
     <title>Read History Login</title>
     {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styleR.css' %}"/>
-    <script type="text/javascript" src="{% static 'javascript/sketch1.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
   </head>
 
   <body>
-    <div class="row row-center first">
+    <div class="row text-center">
       <form class="authentication" action="" target="" method="post">
-        <b>Login:</b>
+        <b>Login</b>
         <br />
         <br />
-        <input class="authentication-item" type="text" name="login" placeholder="username"/>
+        <input class="authentication-item" type="text" name="login" placeholder="username" maxlength="15"/>
         <br />
         <br />
-        <b>Password:</b>
+        <b>Password</b>
         <br />
         <br />
-        <input class="authentication-item" type="password" name="password" placeholder="password"/>
+        <input class="authentication-item" type="password" name="password" placeholder="password" maxlength="30"/>
         <br />
         <br />
         <input class="authentication-item" type="submit" value="login" name="button"/>

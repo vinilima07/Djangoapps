@@ -48,6 +48,29 @@
   padding: 0.5em;
 }
 
+.authentication{
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  right: 30%;
+  width: 40%;;
+  border: 1em solid gray;
+  border-radius: 1em;
+  background: gray;
+  padding: 2em;
+}
+
+.authentication-item{
+  text-align: center;
+  width: 80%;
+}
+
+.authentication-item:hover{
+  transition: all 0.1s linear;
+  opacity: 0.5;
+}
+
+
 @media (max-width: 768px) {
   #addwriter{
     display: none;
