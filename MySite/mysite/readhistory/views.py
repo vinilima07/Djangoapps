@@ -12,3 +12,6 @@ def login(request):
 
 def write(request):
     return render(request, 'readhistory/write.html')
+
+def read(request):
+    return render(request, 'readhistory/read.html')

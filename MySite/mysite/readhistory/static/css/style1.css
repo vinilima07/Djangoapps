@@ -16,12 +16,12 @@
 
 .writer {
   position: absolute;
-  left: 10%;
-  right: 10%;
+  left: 20%;
+  right: 20%;
   top: 10%;
   bottom: 10%;
-  width: 80%;
-  height: 70%;
+  width: 60%;
+  height: 80%;
 }
 
 .writerarea textarea{
@@ -37,13 +37,45 @@
   background: gray;
   border: none;
   width: 14%;
-  height: 100%;
   color: white;
   font-weight: bold;
   padding: 0.5em;
 }
 
 .writerarea{
+  text-align: center;
+  padding: 1.5em;
+}
+
+.reader {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  width: 80%;
+  height: 70%;
+}
+
+.readerarea textarea{
+  max-width: 100%;
+  width: 100%;
+  resize: none;
+  padding: 1em;
+  border: 3em solid gray;
+}
+
+.readerarea output{
+  background: gray;
+  border: none;
+  width: 30%;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  display: inline;
+}
+
+.readerarea{
   text-align: center;
   padding: 0.5em;
 }
@@ -70,6 +102,32 @@
   opacity: 0.5;
 }
 
+.showhistory{
+  width: 100%;
+}
+
+.datashow-head ul{
+  padding: 0;
+  overflow: hidden;
+}
+
+.datashow-head ul, li{
+  list-style-type: none;
+  display: inline;
+}
+
+.datashow-choices{
+  background: blue;
+  padding: 1em;
+}
+
+.datashow-data{
+  background: red;
+}
+
+.space{
+  padding: 1em;
+}
 
 @media (max-width: 768px) {
   #addwriter{
