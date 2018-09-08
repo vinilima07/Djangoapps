@@ -15,3 +15,6 @@ def write(request):
 
 def read(request):
     return render(request, 'readhistory/read.html')
+
+def myhistory(request):
+    return render(request, 'readhistory/myhistory.html')
