@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 #addwriter{
   background: black;
 }
@@ -61,23 +67,22 @@
   max-width: 100%;
   width: 100%;
   resize: none;
-  padding: 1em;
   border: 3em solid gray;
 }
 
-.readerarea output{
+.readerarea readertyper{
   background: gray;
   border: none;
-  width: 30%;
   color: white;
   font-weight: bold;
   padding: 0.5em;
+  width: 25%;
   display: inline;
 }
 
 .readerarea{
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 
 .authentication{
@@ -85,7 +90,7 @@
   top: 15%;
   left: 30%;
   right: 30%;
-  width: 40%;;
+  width: 40%;
   border: 1em solid gray;
   border-radius: 1em;
   background: gray;

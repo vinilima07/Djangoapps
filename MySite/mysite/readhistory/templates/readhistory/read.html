@@ -1,14 +1,14 @@
-output{% extends "readhistory/head.html" %}
+div{% extends "readhistory/head.html" %}
 
 {% block content %}
 
 
-<div class="container reader">
+<div class="reader">
   <form class="row first readerarea" action="">
-    <output value="Title" name="titleread">Title</output>
-    <output value="Caregory" name="catread">Caregory</output>
-    <output value="Veracity" name="verread">Veracity</output>
-    <output value="Where" name="whereread"/>Where</output>
+    <div class="readertyper" value="Title" name="titleread">Title</div>
+    <div class="readertyper" value="Caregory" name="catread">Caregory</div>
+    <div class="readertyper" value="Veracity" name="verread">Veracity</div>
+    <div class="readertyper" value="Where" name="whereread"/>Where</div>
   </form>
   <form class="row last readerarea" name="text" method="post" action="">
     <textarea name="readcontent" rows="15" wrap="hard">
