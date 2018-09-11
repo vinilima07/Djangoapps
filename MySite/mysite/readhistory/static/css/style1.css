@@ -35,22 +35,24 @@
   width: 100%;
   resize: none;
   padding: 1em;
-  border: 3em solid gray;
+  border: 3em solid #f2f2f2;
 }
 
 .writerarea select,
 .writerarea input{
-  background: gray;
+  background: #f2f2f2;
   border: none;
-  width: 14%;
-  color: white;
-  font-weight: bold;
+  color: black;
   padding: 0.5em;
+}
+
+.writerarea label{
+  padding-top: 0.5em;
 }
 
 .writerarea{
   text-align: center;
-  padding: 1.5em;
+  padding: 0.5em;
 }
 
 .reader {
@@ -67,22 +69,24 @@
   max-width: 100%;
   width: 100%;
   resize: none;
-  border: 3em solid gray;
+  border: 3em solid #f2f2f2;
+  padding: 1em;
 }
 
-.readerarea readertyper{
-  background: gray;
+.readertyper{
+  background: #f2f2f2;
   border: none;
-  color: white;
-  font-weight: bold;
+  color: black;
   padding: 0.5em;
-  width: 25%;
-  display: inline;
+}
+
+.readertyper:hover{
+  background: #f2f2f9;
 }
 
 .readerarea{
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .authentication{
@@ -91,9 +95,9 @@
   left: 30%;
   right: 30%;
   width: 40%;
-  border: 1em solid gray;
+  border: 1em solid #f2f2f2;
   border-radius: 1em;
-  background: gray;
+  background: #f2f2f2;
   padding: 2em;
 }
 
@@ -108,30 +112,26 @@
 }
 
 .showhistory{
-  width: 100%;
-}
-
-.datashow-head ul{
-  padding: 0;
-  overflow: hidden;
-}
-
-.datashow-head ul, li{
-  list-style-type: none;
-  display: inline;
 }
 
 .datashow-choices{
-  background: blue;
-  padding: 1em;
+  display: inline-flex;
+  background: #f2f2f2;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5em;
 }
 
-.datashow-data{
-  background: red;
+.datashow-data td{
+  background: #f2f2d3;
+  height: 50px;
 }
 
-.space{
-  padding: 1em;
+.datashow-item{
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%; /*flex-grow flex-shrink flex-basis*/
+  max-width: 20%;
 }
 
 @media (max-width: 768px) {
