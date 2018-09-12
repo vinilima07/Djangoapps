@@ -115,12 +115,17 @@
 }
 
 .datashow-choices{
-  display: inline-flex;
   background: #f2f2f2;
   width: 100%;
   align-items: center;
-  text-align: center;
-  padding-top: 0.5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-gap: 0px;
+  padding: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .datashow-data td{
@@ -138,6 +143,11 @@
   #addwriter{
     display: none;
   }
+  .datashow-item{
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%; /*flex-grow flex-shrink flex-basis*/
+    max-width: 30%;
+  }
 }
 
 /*Sobreposições bootstrap*/
@@ -150,4 +160,5 @@
   .navbar{
     padding-right:2em;
   }
+
 }
