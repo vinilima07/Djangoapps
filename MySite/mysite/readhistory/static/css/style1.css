@@ -4,6 +4,10 @@
   border: 0;
 }
 
+.navbar{
+  padding-right:2em;
+}
+
 #addwriter{
   background: black;
 }
@@ -13,7 +17,7 @@
 }
 
 .first{
-  padding-top: 5.5em;
+  padding-top: 1.5em;
 }
 
 .last{
@@ -39,21 +43,20 @@
   text-align: justify;
 }
 
-.writerarea select,
-.writerarea input{
-  background: #f2f2f2;
-  border: none;
-  color: black;
+.writechoice select,
+.writechoice div{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.writechoice select,
+.writechoice div > input{
+  background: #f2f2f2f2;
   padding: 0.5em;
 }
 
-.writerarea label{
-  padding-top: 0.5em;
-}
-
-.writerarea{
-  text-align: justify;
-  padding: 0.5em;
+.writechoice div{
+  float: right;
 }
 
 .reader {
@@ -161,17 +164,35 @@
     flex: 0 0 30%; /*flex-grow flex-shrink flex-basis*/
     max-width: 30%;
   }
+  .writechoice select{
+    width: 49%;
+  }
+  .writechoice div{
+    float: left;
+    width: 99%;
+  }
+  .writechoice div > label,
+  .writechoice div > input{
+    width: 100%;
+  }
+  .writerarea textarea{
+    width: 99%;
+  }
+}
+
+@media (min-width: 768px) {
+    .writechoice div{
+      padding-left: 4em;
+    }
+    .writechoice div{
+      float: right;
+    }
 }
 
 /*Sobreposições bootstrap*/
 .dropdown a{
   text-decoration: none;
-  color: black;
 }
 
 @media (min-width: 768px) {
-  .navbar{
-    padding-right:2em;
-  }
-
 }
