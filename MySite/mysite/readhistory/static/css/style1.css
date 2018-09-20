@@ -16,6 +16,16 @@
   color: white;
 }
 
+#submitbutton{
+  color: black;
+  padding: 1em;
+}
+
+#submitbutton:hover{
+  background: #ccd5e5;
+  padding: 1em;
+}
+
 .first{
   padding-top: 1.5em;
 }
