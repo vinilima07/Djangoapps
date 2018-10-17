@@ -5,7 +5,12 @@
 <div class="container first">
 	<div class="row text-center" style="padding-top: 100px">
 		<p>
-			kkkkkkkkkkkk
+			{% for c in content %}
+				{{c}}
+			{% endfor %}
+		</p>
+		<p>
+			{{myname}}
 		</p>
 	</div>
 </div>

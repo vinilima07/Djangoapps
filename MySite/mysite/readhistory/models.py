@@ -1,10 +1,3 @@
-# This is an auto-generated Django model module.
-# You'll have to do the following manually to clean this up:
-#   * Rearrange models' order
-#   * Make sure each model has one field with primary_key=True
-#   * Make sure each ForeignKey has `on_delete` set to the desidered behavior.
-#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
-# Feel free to rename the models, but don't rename db_table values or field names.
 from __future__ import unicode_literals
 
 from django.db import models
@@ -76,6 +69,24 @@ class AuthUserUserPermissions(models.Model):
         unique_together = (('user', 'permission'),)
 
 
+class Author(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    author_name = models.CharField(max_length=15)
+
+    class Meta:
+        managed = False
+        db_table = 'author'
+
+
+class Category(models.Model):
+    id = models.SmallIntegerField(primary_key=True)
+    category_name = models.CharField(max_length=15)
+
+    class Meta:
+        managed = False
+        db_table = 'category'
+
+
 class DjangoAdminLog(models.Model):
     action_time = models.DateTimeField()
     object_id = models.TextField(blank=True, null=True)
@@ -120,10 +131,14 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-class Text(models.Model):
+class History(models.Model):
     title = models.CharField(max_length=30, blank=True, null=True)
+    id_category = models.ForeignKey(Category, models.DO_NOTHING, db_column='id_category')
     id = models.BigIntegerField(primary_key=True)
+    id_author = models.ForeignKey(Author, models.DO_NOTHING, db_column='id_author')
+    place = models.CharField(max_length=100, blank=True, null=True)
+    history_data = models.TextField(blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'text'
+        db_table = 'history'
